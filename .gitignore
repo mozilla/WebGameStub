@@ -22,14 +22,6 @@ nbproject
 *.sublime-project
 *.sublime-workspace
 
-# Dreamweaver added files
-_notes
-dwsync.xml
-
-# Komodo
-*.komodoproject
-.komodotools
-
 # Espresso
 *.esproj
 *.espressostorage
