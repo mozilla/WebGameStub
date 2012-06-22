@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "name": "My App",
+  "description": "My App",
+  "icons": {
+    "16": "/img/icon-16.png",
+    "48": "/img/icon-48.png",
+    "128": "/img/icon-128.png"
+  },
+  "installs_allowed_from": ["*"]
+}
