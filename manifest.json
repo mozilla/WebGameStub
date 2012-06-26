@@ -1,21 +1,16 @@
 {
-  "name": "<Fill in your app name here>",
-  "description": "Read your gmail",
-  "version": "1",
+  "name": "Your Game",
+  "description": "A description of your game",
+  "version": "0.1",
   "app": {
     "urls": [
-      "*://mail.google.com/mail/",
-      "*://www.google.com/mail/"
+      "*://your.domain.com/yourgame",
     ],
     "launch": {
-      "web_url": "http://mail.google.com/mail/"
+      "web_url": "http://your.domain.com/yourgame"
     }
   },
   "icons": {
-    "128": "icon_128.png"
-  },
-  "permissions": [
-    "unlimitedStorage",
-    "notifications"
-  ]
+    "128": "game_icon_128.png"
+  }
 }

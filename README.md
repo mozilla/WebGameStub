@@ -17,7 +17,7 @@ Once your game is finished, you can publish it to a number of web marketplaces i
 
 To publish your game to the Mozilla Marketplace:
 
-1. Edit the application manifest template `game.webapp` in your project directory and fill in the required fields. Additional documentation for the mainfest file format is available [here](https://developer.mozilla.org/en/Apps/Manifest).
+1. Edit the application manifest template `game.webapp` in your project directory and fill in the required fields. Additional documentation for the mainfest file format is available [here](https://developer.mozilla.org/en/Apps/Manifest). Note that you are free to rename `game.webapp` to something else.
 
 2. Visit the [Mozilla Marketplace](https://marketplace.mozilla.org/en-US/developers/) and follow the instructions for submitting your application.
 
