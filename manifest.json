@@ -1,0 +1,21 @@
+{
+  "name": "<Fill in your app name here>",
+  "description": "Read your gmail",
+  "version": "1",
+  "app": {
+    "urls": [
+      "*://mail.google.com/mail/",
+      "*://www.google.com/mail/"
+    ],
+    "launch": {
+      "web_url": "http://mail.google.com/mail/"
+    }
+  },
+  "icons": {
+    "128": "icon_128.png"
+  },
+  "permissions": [
+    "unlimitedStorage",
+    "notifications"
+  ]
+}
