@@ -3,7 +3,7 @@
   "name": "Your Game",  
   "description": "Description of your game",  
   "icons": {  
-    "128": "icon_128.png"  
+    "128": "/icon_128.png"  
   },  
   "developer": {  
     "name": "Your Name",  
