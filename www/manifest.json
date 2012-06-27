@@ -4,7 +4,7 @@
   "version": "0.1",
   "app": {
     "urls": [
-      "*://example.com/yourgame",
+      "*://example.com/yourgame"
     ],
     "launch": {
       "web_url": "http://example.com/yourgame"
