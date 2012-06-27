@@ -4,10 +4,10 @@
   "version": "0.1",
   "app": {
     "urls": [
-      "*://your.domain.com/yourgame",
+      "*://example.com/yourgame",
     ],
     "launch": {
-      "web_url": "http://your.domain.com/yourgame"
+      "web_url": "http://example.com/yourgame"
     }
   },
   "icons": {
