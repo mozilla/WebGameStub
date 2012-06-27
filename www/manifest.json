@@ -1,0 +1,16 @@
+{
+  "name": "Your Game",
+  "description": "A description of your game",
+  "version": "0.1",
+  "app": {
+    "urls": [
+      "*://your.domain.com/yourgame",
+    ],
+    "launch": {
+      "web_url": "http://your.domain.com/yourgame"
+    }
+  },
+  "icons": {
+    "128": "icon_128.png"
+  }
+}
