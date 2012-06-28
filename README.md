@@ -2,6 +2,7 @@
 
 WebGameStub helps you get a quick and easy start on writing an HTML5 game with 2D canvas with a simple template and a few tools.
 WebGameStub offers a good starting point for the game itself and smoothes off a variety of the rough edges associated with writing and publishing a Web app.
+
 WebGameStub is about saving you time and effort so that you can focus on writing your game.
 It's about not having to write the most basic game infrastructure pieces, like canvas setup and an update/render loop.
 It's about having an easier starting point than a blank canvas.
