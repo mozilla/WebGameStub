@@ -1,3 +1,7 @@
+// Setup requestAnimationFrame
+requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame ||  
+                        window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+
 // Create the canvas
 var canvas = document.createElement("canvas");
 var ctx = canvas.getContext("2d");
@@ -115,9 +119,10 @@ var main = function () {
 	render();
 
 	then = now;
+	requestAnimationFrame(main);
 };
 
 // Let's play this game!
 reset();
 var then = Date.now();
-setInterval(main, 1); // Execute as fast as possible
+main();
