@@ -1,13 +1,12 @@
 # WebGameStub
 
-<I think we can pull heavily from the blog post for this part. At the very least, we should use similar language and cover the same details.>
 WebGameStub helps you get a quick and easy start on writing an HTML5 game with 2D canvas with a simple template and a few tools.
 WebGameStub  offers a good starting point for the game itself and smoothes off a  variety of the rough edges associated with writing and publishing a Web game.
 
 WebGameStub is about saving you time and effort so that you can focus on writing your game.
 It's about not having to write the most basic game infrastructure pieces, like canvas setup and an update/render loop.
 It's about having an easier starting point than a blank canvas.
-It's  about not having to spend your time stitching together the usual  cross-browser bits associated with bootstrapping an app on the web.
+It's about not having to spend your time stitching together the usual cross-browser bits associated with bootstrapping an app on the web.
 And once you've got a game you're proud of, it's about making it easy to publish into the app stores on the web, including the new Mozilla Marketplace.
 
 ## Getting started
@@ -16,9 +15,6 @@ And once you've got a game you're proud of, it's about making it easy to publish
 [the downloads page](https://github.com/mozilla/WebGameStub/downloads)
 * Open the index.html file in the www folder in a web browser
 * Edit the application in www/js/app.js and then reload the index.html file to see how your changes affect the game
-* (deploy) <Where do they deploy it to? Is this synonymous with publishing the game?>
-* <INSERT TUTORIAL LINK HERE>
-<I think we need more details here, especially in the last few points. Can probably omit the part about editing the JSON files, since that's not really required for getting started. We can also link out to the tutorial.>
 
 #Extra Features (requires node.js)
 
@@ -63,17 +59,11 @@ To publish your game to the [Chrome Web Store]():
 
 # More Resources
 
-## FAQ
-
-Empty for now
-<Put the FAQ on the project wiki and link to it?> <Do we have one?>
-
 ## Game APIs
 
 * [Pointer Lock API](https://developer.mozilla.org/en/API/Pointer_Lock_API)
 * [Gamepad API](https://developer.mozilla.org/en/API/Gamepad/Using_Gamepad_API)
 * [Fullscreen API](https://developer.mozilla.org/en/DOM/Using_full-screen_mode)
-<Add a link to the full screen API as well.> <Done>
 
 ## 2D Art
 
@@ -84,6 +74,5 @@ filing a [github issue](https://github.com/mozilla/WebGameStub/issues)
 
 # Getting involved
 
-Join us on #games on irc.mozilla.org and message dmose, ack, or dperit if you want to get involved and contribute to Webgamestub. We also welcome any feedback and input that you have to offer! <Do we have a twitter for this thing? Or should I just post the gladiusjs one? Or our personal ones?>
+Join us on #games on irc.mozilla.org and message dmose, ack, or dperit if you want to get involved and contribute to Webgamestub. We also welcome any feedback and input that you have to offer!
 Issues can be filed on https://github.com/mozilla/WebGameStub/issues
-<Needs a section on how to get involved. Mention twitter/IRC info, where to file issues, and solocitation for feedback and input.>
