@@ -221,12 +221,16 @@
                         }
                     });
 
+
+                    v.copyFile(path.join('www',  'js', 'lib', 'modernizr-2.5.3.min.js'), path.join(buildDir, 'js', 'lib', 'modernizr-2.5.3.min.js'));
+                    v.copyFile(path.join('www',  'js', 'lib', 'require.js'), path.join(buildDir, 'js', 'lib', 'require.js'));
+
                     //If almond is in use, it is built into app.js, so need
                     //to update the script tag to just load app.js instead.
                     if (!namedArgs.dynamic) {
                         var indexName = buildDir + '/index.html',
                             contents = v.read(indexName),
-                            scriptRegExp = /(<script[^>]+data-main="[^"]+"[^>]+)(src="[^"]+")([^>]+>\s*<\/script>)/;
+                            scriptRegExp = /(<script[^>]+data-main="[^"]+"[^>]+)(src="[^"]+")([^>]*>\s*<\/script>)/;
 
                         contents = contents.replace(scriptRegExp,
                             function (match, pre, script, post) {
@@ -481,7 +485,7 @@
                     master = v.read(buildDir + '/index.html'),
                     appFiles;
 
-                appFiles = v.getFilteredFileList(buildDir);
+                appFiles = v.getFilteredFileList(buildDir, null, /\.htaccess/);
                 appFiles = appFiles.map(function (file) {
                     var start = file.indexOf('/' + buildDir + '/');
                     start = (start !== -1) ? (start + 11) : 0;
