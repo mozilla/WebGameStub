@@ -1,35 +1,45 @@
 # WebGameStub
 
 WebGameStub helps you get a quick and easy start on writing an HTML5 game with 2D canvas with a simple template and a few tools.
-WebGameStub offers a good starting point for the game itself and smoothes off a variety of the rough edges associated with writing and publishing a Web app.
+It offers a good starting point for the game itself and smoothes off a variety of the rough edges associated with writing and publishing a Web app.
 
 WebGameStub is about saving you time and effort so that you can focus on writing your game.
 It's about not having to write the most basic game infrastructure pieces, like canvas setup and an update/render loop.
 It's about having an easier starting point than a blank canvas.
 It's about not having to spend your time stitching together the usual cross-browser bits associated with bootstrapping an app on the web.
 
-## Getting started
+### What WebGameStub 0.1 Gets You
 
-* Download the current version of this project from
-[the downloads page](https://github.com/mozilla/WebGameStub/downloads)
-* Open the index.html file in the www folder in a web browser
-* Edit the application in www/js/app.js and then reload the index.html file to see how your changes affect the game
+* A simple update/render loop and canvas.
+* A version of Lost Decade's simple canvas game that you can inspect and extend.
+* Links to helpful game docs, API docs, and open art resources so you don't have to hunt for them.
+* HTML & CSS based on HTML5 Boilerplate for speed, robustness, and futureproofing.
+* (Optional) Using node.js: automated optimization, deployment to github pages, and library installation using volo.
 
-#Extra Features (requires node.js)
+## Getting Started
 
-# Prerequisites for extras
+1. [Download](https://github.com/mozilla/WebGameStub/downloads) the current version of WebGameStub
+2. Review index.html and game.js in examples/simple_canvas_game. These are the main parts of the simple canvas game built on top of WebGameStub
+    * Depending on your level of experience you may find Lost Decade's [excellent tutorial](http://www.lostdecadegames.com/how-to-make-a-simple-html5-canvas-game/) helpful when going through the code
+3. Use index.html and game.js in the www and www/js folders as a starting point for your own game
+    * Many of the additional files in WebGameStub come from HTML5 Boilerplate, which has [Docs](http://html5boilerplate.com/docs/#the-core-of-html5-boilerplate) you can read to learn more
 
-* be sure [node.js and npm](http://nodejs.org/) are installed and in your PATH
-* (optional) if you wish to deploy to github pages, ensure that
+# Helpful Tools (requires node.js)
+
+## Tool Prerequisites
+
+* Be sure that [node.js and npm](http://nodejs.org/) are installed and in your PATH
+* (optional) If you wish to deploy to github pages, ensure that
  [git](http://help.github.com/set-up-git-redirect) is installed and configured
 * Use npm to install volo into your path, if it's not there already:
 
-    > npm install -g volo
+    > sudo npm install -g volo
 
-## Simple library installation
+Windows users will need to drop the sudo from this command
 
-Add any libraries that you intend to use.  volo uses github's search API to
-find them and grabs the latest released version.
+## Simple Library Installation
+
+Right now there is a small (but growing) number of libraries useful to games that install out-of-the-box using volo. You can see a list of them [here](https://github.com/mozilla/WebGameStub/wiki/game-library-volo-compatibility), along with some information about what to do if you encounter problems.
 
     > volo add three.js
     Using github repo "mrdoob/three.js" for "three.js"...
@@ -73,10 +83,18 @@ Deploy the built version to the gh-pages branch of suitably named repo:
 
 * [Danc's Miraculously Flexible Game Prototyping Tiles](http://www.lostgarden.com/2007/05/dancs-miraculously-flexible-game.html) (see bottom of post for download link)
 * [Open Game Art 2D Art](http://opengameart.org/art-search-advanced?keys=&field_art_type_tid[]=9&field_art_tags_tid_op=and&field_art_tags_tid=&name=&sort_by=count&sort_order=DESC&Collection=)
+
 If you know of any other good sources of free reusable art please let us know by
 filing a [github issue](https://github.com/mozilla/WebGameStub/issues)
 
-# Getting involved
+## Miscellaneous
 
-Join us on [#games on irc.mozilla.org](irc://irc.mozilla.org/games) and message dmose, ack, or dperit if you want to get involved and contribute to Webgamestub. We also welcome any feedback and input that you have to offer!
-Issues can be filed on https://github.com/mozilla/WebGameStub/issues
+* [WebGameStub's Github repo](https://github.com/mozilla/WebGameStub/)
+* [Frequently Asked Questions](https://github.com/mozilla/WebGameStub/wiki/Frequently-Asked-Questions), including info about what this means for the Minimalist Template
+* Lost Decade's [excellent tutorial](http://www.lostdecadegames.com/how-to-make-a-simple-html5-canvas-game/) on how they built the  simple canvas game
+* [HTML5 Boilerplate](http://html5boilerplate.com/)
+
+# Feedback and helping out
+
+If you run into something that's missing or that is getting in your way when using WebGameStub, please help us out by opening a [github issue](https://github.com/mozilla/WebGameStub/issues) (or even a pull request!) to discuss it.
+We're often available in [#games on irc.mozilla.org](irc://irc.mozilla.org/#games) for questions.
