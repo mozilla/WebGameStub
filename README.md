@@ -31,12 +31,12 @@ pages
 
 ## Prerequisites for extras
 
-* be sure [node.js and npm](http://nodejs.org/) are installed and in your PATH
-* (optional) if you wish to deploy to github pages, ensure that
+* Be sure that [node.js and npm](http://nodejs.org/) are installed and in your PATH
+* (optional) If you wish to deploy to github pages, ensure that
  [git](http://help.github.com/set-up-git-redirect) is installed and configured
 * Use npm to install volo into your path, if it's not there already:
 
-    > npm install -g volo
+    > sudo npm install -g volo
 
 ## Simple library installation
 
