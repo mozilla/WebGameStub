@@ -177,7 +177,7 @@ define(function (require) {
                         v.copyDir('www', buildDir);
 
                         //Remove the js dir from the built area, will be
-                        //replaced by an optimized game.js
+                        //replaced by an optimized app.js
                         v.rm(buildDir + '/js');
 
                         //Do the CSS optimization
@@ -194,7 +194,7 @@ define(function (require) {
                     var optimize = namedArgs.optimize || 'uglify';
 
                     if (namedArgs.dynamic) {
-                        //Still use require.js to load the game.js file.
+                        //Still use require.js to load the app.js file.
                         return v.spawn('node', ['tools/r.js', '-o',
                                         'appDir=www',
                                         'baseUrl=js/lib',
@@ -212,7 +212,7 @@ define(function (require) {
                                         'paths.almond=../../../tools/almond',
                                         'name=almond',
                                         'include=app',
-                                        'out=' + buildDir + '/js/game.js',
+                                        'out=' + buildDir + '/js/app.js',
                                         'optimize=' + optimize], {
                             useConsole: !namedArgs.quiet
                         });
@@ -227,8 +227,8 @@ define(function (require) {
                         }
                     });
 
-                    //If almond is in use, it is built into game.js, so need
-                    //to update the script tag to just load game.js instead.
+                    //If almond is in use, it is built into app.js, so need
+                    //to update the script tag to just load app.js instead.
                     if (!namedArgs.dynamic) {
                         var indexName = buildDir + '/index.html',
                             contents = v.read(indexName),
@@ -236,7 +236,7 @@ define(function (require) {
 
                         contents = contents.replace(scriptRegExp,
                             function (match, pre, script, post) {
-                            return pre + 'src="js/game.js"' + post;
+                            return pre + 'src="js/app.js"' + post;
                         });
 
                         v.write(indexName, contents);
