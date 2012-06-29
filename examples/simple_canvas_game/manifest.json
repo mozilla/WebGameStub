@@ -5,10 +5,10 @@
   "manifest_version": 2,
   "app": {
     "urls": [
-      "*://example.com/yourgame"
+      "<URL of your hosted game, possibly on localhost>"
     ],
     "launch": {
-      "web_url": "http://example.com/yourgame"
+      "web_url": "<URL of your hosted game, possibly on localhost>"
     }
   },
   "icons": {

@@ -9,5 +9,6 @@
     "name": "Matt Hackett",  
     "url": "http://www.lostdecadegames.com"  
   },  
-  "installs_allowed_from": ["*"]
+  "installs_allowed_from": ["*"],
+  "launch_path": "<URL of your hosted game, possibly on localhost>"
 }  
