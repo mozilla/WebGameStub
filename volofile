@@ -1,6 +1,8 @@
 /*jslint regexp: true */
 /*global define, console, process */
 
+var connect = require( "connect" );
+
 define(function (require) {
     'use strict';
 
@@ -515,6 +517,22 @@ define(function (require) {
                           '.appcache files to be: text/cache-manifest');
             })
             .fail(d.reject);
+        },
+
+        serve: function( d, v, namedArgs ) {            
+            var port = 8086;
+            var base = process.cwd();
+
+            var middleware = [
+                connect.static( base ),
+                connect.directory( base )
+            ];
+            connect.logger.format( "WebGameStub", ("[D] server :method :url :status " +
+                ":res[content-length] - :response-time ms" ));
+            middleware.unshift( connect.logger( "WebGameStub" ) );
+
+            console.log( "starting web server on port " + port );
+            connect.apply( null, middleware ).listen( port );
         }
     };
 });
