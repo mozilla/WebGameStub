@@ -1,9 +1,10 @@
 {  
   "version": "0.1",  
   "name": "Simple Canvas Game",  
-  "description": "A simple HTML5 2D canvas game.",  
+  "description": "A simple HTML5 2D canvas game.",
+  "launch_path": "/examples/simple_canvas_game/",
   "icons": {  
-    "128": "/icon_128.png"  
+    "128": "/examples/simple_canvas_game/icon_128.png"  
   },  
   "developer": {  
     "name": "Matt Hackett",  
