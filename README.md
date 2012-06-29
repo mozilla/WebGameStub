@@ -1,12 +1,20 @@
 # WebGameStub
 
 WebGameStub helps you get a quick and easy start on writing an HTML5 game with 2D canvas with a simple template and a few tools.
-WebGameStub offers a good starting point for the game itself and smoothes off a variety of the rough edges associated with writing and publishing a Web app.
+It offers a good starting point for the game itself and smoothes off a variety of the rough edges associated with writing and publishing a Web app.
 
 WebGameStub is about saving you time and effort so that you can focus on writing your game.
 It's about not having to write the most basic game infrastructure pieces, like canvas setup and an update/render loop.
 It's about having an easier starting point than a blank canvas.
 It's about not having to spend your time stitching together the usual cross-browser bits associated with bootstrapping an app on the web.
+
+### What WebGameStub 0.1 Gets You
+
+* A simple update/render loop and canvas.
+* A copy of an example game that you can inspect and extend.
+* Links to helpful game docs, API docs, and open art resources so you don't have to hunt for them.
+* HTML & CSS based on HTML5 Boilerplate for speed, robustness, and futureproofing.
+* (Optional) Using node.js: automated optimization, deployment to github pages, and library installation using volo.
 
 ## Getting started
 
@@ -17,7 +25,11 @@ It's about not having to spend your time stitching together the usual cross-brow
 
 #Extra Features (requires node.js)
 
-# Prerequisites for extras
+The extra features of WebGameStub allow you to easily add libraries, build a
+minified and optimized version of your game, and then easily deploy it to github
+pages
+
+## Prerequisites for extras
 
 * be sure [node.js and npm](http://nodejs.org/) are installed and in your PATH
 * (optional) if you wish to deploy to github pages, ensure that
@@ -73,10 +85,19 @@ Deploy the built version to the gh-pages branch of suitably named repo:
 
 * [Danc's Miraculously Flexible Game Prototyping Tiles](http://www.lostgarden.com/2007/05/dancs-miraculously-flexible-game.html) (see bottom of post for download link)
 * [Open Game Art 2D Art](http://opengameart.org/art-search-advanced?keys=&field_art_type_tid[]=9&field_art_tags_tid_op=and&field_art_tags_tid=&name=&sort_by=count&sort_order=DESC&Collection=)
+
 If you know of any other good sources of free reusable art please let us know by
 filing a [github issue](https://github.com/mozilla/WebGameStub/issues)
 
-# Getting involved
+# Feedback and helping out
 
-Join us on [#games on irc.mozilla.org](irc://irc.mozilla.org/games) and message dmose, ack, or dperit if you want to get involved and contribute to Webgamestub. We also welcome any feedback and input that you have to offer!
-Issues can be filed on https://github.com/mozilla/WebGameStub/issues
+If you run into something that's missing or that is getting in your way when using WebGameStub, please help us out by opening a [github issue](https://github.com/mozilla/WebGameStub/issues) (or even a pull request!) to discuss it.
+We're often available in [#games on irc.mozilla.org](irc://irc.mozilla.org/#games) for questions.
+
+# More Info
+
+* [WebGameStub's Github repo](https://github.com/mozilla/WebGameStub/)
+* [Frequently Asked Questions](https://github.com/mozilla/WebGameStub/wiki/Frequently-Asked-Questions), including info about what this means for the Minimalist Template
+* Lost Decade's [excellent tutorial](http://www.lostdecadegames.com/how-to-make-a-simple-html5-canvas-game/) on how they built the  simple canvas game
+* [HTML5 Boilerplate](http://html5boilerplate.com/)
+
