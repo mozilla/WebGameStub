@@ -1,0 +1,13 @@
+{  
+  "version": "0.1",  
+  "name": "Simple Canvas Game",  
+  "description": "A simple HTML5 2D canvas game.",  
+  "icons": {  
+    "128": "/icon_128.png"  
+  },  
+  "developer": {  
+    "name": "Matt Hackett",  
+    "url": "http://www.lostdecadegames.com"  
+  },  
+  "installs_allowed_from": ["*"]
+}  

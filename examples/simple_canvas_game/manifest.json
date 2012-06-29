@@ -1,6 +1,6 @@
 {
-  "name": "Your Game",
-  "description": "A description of your game",
+  "name": "Simple Canvas Game",
+  "description": "A simple HTML5 2D canvas game.",
   "version": "0.1",
   "manifest_version": 2,
   "app": {
