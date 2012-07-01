@@ -319,6 +319,10 @@
                 },
                 authInfo, repoName, hasGhPages;
 
+                var q = v.require('q'),
+                    github = v.require('volo/lib/github')
+                    githubAuth = v.require('volo/lib/github/auth');
+
                 q.call(function () {
                     //First check if there is already a repo
                     if (!v.exists(buildDir)) {
@@ -354,7 +358,7 @@
                         .then(function (data) {
                             var sshUrl = data.ssh_url;
 
-                            //Repo exists, see if there is a gh-pages repo
+                            //Repo exists, see if there is a gh-pages branch
                             //already
                             github('repos/' + authInfo.user + '/' + repoName + '/branches')
                             .then(function (data) {
@@ -453,11 +457,14 @@
                             //Remove any files from git that are not on on disk
                             ['git', 'add', '-u'],
                             ['git', 'commit', '-m', message],
-                            ['git', 'push', 'origin', 'gh-pages']
+                            ['git', 'push', 'origin', 'gh-pages'],
                         ], spawnOptions);
                     });
                 })
                 .then(function () {
+                    // return the main repo in the state it started in
+                    v.sequence([['git', 'reset', 'HEAD']]);
+                    
                     if (repoName) {
                         return 'GitHub Pages is set up. Check http://' +
                                 authInfo.user + '.github.com/' + repoName +
