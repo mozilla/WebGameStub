@@ -162,6 +162,7 @@
             },
 
             run: function (d, v, namedArgs) {
+                var q = v.require('q');
                 q.call(function () {
                     //Remove the old dir
                     v.rm(buildDir);
@@ -264,6 +265,9 @@
             },
 
             run: function (d, v, namedArgs) {
+
+                var q = v.require('q');
+
                 var dir = namedArgs.dir,
                     files = v.getFilteredFileList(dir),
                     digests = [],
@@ -531,4 +535,3 @@
             connect.apply( null, middleware ).listen( port );
         }
     };
-
