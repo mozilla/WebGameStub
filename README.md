@@ -8,13 +8,14 @@ It's about not having to write the most basic game infrastructure pieces, like c
 It's about having an easier starting point than a blank canvas.
 It's about not having to spend your time stitching together the usual cross-browser bits associated with bootstrapping an app on the web.
 
-### What WebGameStub 0.1 Gets You
+### What WebGameStub Gets You
 
 * A simple update/render loop and canvas.
 * A version of Lost Decade's simple canvas game that you can inspect and extend.
 * Links to helpful game docs, API docs, and open art resources so you don't have to hunt for them.
 * HTML & CSS based on HTML5 Boilerplate for speed, robustness, and futureproofing.
-* (Optional) Using node.js: automated optimization, deployment to github pages, and library installation using volo.
+* (Optional) Using node.js: webserver for HTTP testing, automated optimization,
+    deployment to github pages, and library installation using volo.
 
 ## Getting Started
 
