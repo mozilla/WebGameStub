@@ -14,8 +14,9 @@ It's about not having to spend your time stitching together the usual cross-brow
 * A version of Lost Decade's simple canvas game that you can inspect and extend.
 * Links to helpful game docs, API docs, and open art resources so you don't have to hunt for them.
 * HTML & CSS based on HTML5 Boilerplate for speed, robustness, and futureproofing.
-* (Optional) Using node.js: webserver for HTTP testing, automated optimization,
-    deployment to github pages, and library installation using volo.
+* (Optional) Requires node.js: webserver for HTTP testing, play your game as a
+    native app, automated optimization, deployment to github pages, and library
+    installation using volo.
 
 ## Getting Started
 
@@ -38,7 +39,7 @@ It's about not having to spend your time stitching together the usual cross-brow
 
 Windows users will need to drop the sudo from this command
 
-## Easy testing over HTTP 
+## Easy Testing Over HTTP 
 
 Things sometimes work differently when browsed to via file: URLs.  Test over
 HTTP for more accurate results:
@@ -49,7 +50,14 @@ HTTP for more accurate results:
     
 Now pointing your browser to http://localhost:8086/ will serve up your files
 for testing.
-    
+
+## Play as an App Instead of in a Browser
+
+* Be sure you're accessing the game through a webserver (like "volo serve" above). Navigate to (e.g.) http://localhost:8086/examples/simple_canvas_game/install.html using a build of Firefox 16 or later.
+* When prompted, click the "Install"button.
+* Look in your OS application list (on Mac OS X, for example, this is the global Applications folder)
+* Click on the app named Simple Canvas Game to see this in action.
+
 ## Simple Library Installation
 
 Right now there is a small (but growing) number of libraries useful to games that install out-of-the-box using volo. You can see a list of them [here](https://github.com/mozilla/WebGameStub/wiki/game-library-volo-compatibility), along with some information about what to do if you encounter problems.
