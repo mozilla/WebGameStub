@@ -162,6 +162,7 @@
             },
 
             run: function (d, v, namedArgs) {
+                var q = v.require('q');
                 q.call(function () {
                     //Remove the old dir
                     v.rm(buildDir);
@@ -221,12 +222,16 @@
                         }
                     });
 
+
+                    v.copyFile(path.join('www',  'js', 'lib', 'modernizr-2.5.3.min.js'), path.join(buildDir, 'js', 'lib', 'modernizr-2.5.3.min.js'));
+                    v.copyFile(path.join('www',  'js', 'lib', 'require.js'), path.join(buildDir, 'js', 'lib', 'require.js'));
+
                     //If almond is in use, it is built into app.js, so need
                     //to update the script tag to just load app.js instead.
                     if (!namedArgs.dynamic) {
                         var indexName = buildDir + '/index.html',
                             contents = v.read(indexName),
-                            scriptRegExp = /(<script[^>]+data-main="[^"]+"[^>]+)(src="[^"]+")([^>]+>\s*<\/script>)/;
+                            scriptRegExp = /(<script[^>]+data-main="[^"]+"[^>]+)(src="[^"]+")([^>]*>\s*<\/script>)/;
 
                         contents = contents.replace(scriptRegExp,
                             function (match, pre, script, post) {
@@ -260,6 +265,9 @@
             },
 
             run: function (d, v, namedArgs) {
+
+                var q = v.require('q');
+
                 var dir = namedArgs.dir,
                     files = v.getFilteredFileList(dir),
                     digests = [],
@@ -311,6 +319,10 @@
                 },
                 authInfo, repoName, hasGhPages;
 
+                var q = v.require('q'),
+                    github = v.require('volo/lib/github')
+                    githubAuth = v.require('volo/lib/github/auth');
+
                 q.call(function () {
                     //First check if there is already a repo
                     if (!v.exists(buildDir)) {
@@ -346,7 +358,7 @@
                         .then(function (data) {
                             var sshUrl = data.ssh_url;
 
-                            //Repo exists, see if there is a gh-pages repo
+                            //Repo exists, see if there is a gh-pages branch
                             //already
                             github('repos/' + authInfo.user + '/' + repoName + '/branches')
                             .then(function (data) {
@@ -445,11 +457,14 @@
                             //Remove any files from git that are not on on disk
                             ['git', 'add', '-u'],
                             ['git', 'commit', '-m', message],
-                            ['git', 'push', 'origin', 'gh-pages']
+                            ['git', 'push', 'origin', 'gh-pages'],
                         ], spawnOptions);
                     });
                 })
                 .then(function () {
+                    // return the main repo in the state it started in
+                    v.sequence([['git', 'reset', 'HEAD']]);
+                    
                     if (repoName) {
                         return 'GitHub Pages is set up. Check http://' +
                                 authInfo.user + '.github.com/' + repoName +
@@ -481,7 +496,7 @@
                     master = v.read(buildDir + '/index.html'),
                     appFiles;
 
-                appFiles = v.getFilteredFileList(buildDir);
+                appFiles = v.getFilteredFileList(buildDir, null, /\.htaccess/);
                 appFiles = appFiles.map(function (file) {
                     var start = file.indexOf('/' + buildDir + '/');
                     start = (start !== -1) ? (start + 11) : 0;
@@ -527,4 +542,3 @@
             connect.apply( null, middleware ).listen( port );
         }
     };
-

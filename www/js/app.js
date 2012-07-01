@@ -16,19 +16,6 @@ require.config({
 
 var global = this;
 
-// Include the in-app payments API, and if it fails to load handle it
-// gracefully.
-// https://developer.mozilla.org/en/Apps/In-app_payments
-require(['https://marketplace-cdn.addons.mozilla.net/mozmarket.js'],
-        function() {},
-        function(err) {
-            global.mozmarket = global.mozmarket || {};
-            global.mozmarket.buy = function() {
-                alert('The in-app purchasing is currently unavailable.');
-            };
-        });
-
-
 require(['jquery'], function($) {
   // Create the canvas
   var canvas = document.createElement("canvas");
@@ -68,7 +55,7 @@ require(['jquery'], function($) {
   var then = Date.now();
   // Execute as fast as possible
   setInterval(main, 1);
-]
+
 });
 
 // END REQUIRE.JS CODE
