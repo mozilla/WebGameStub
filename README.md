@@ -37,6 +37,18 @@ It's about not having to spend your time stitching together the usual cross-brow
 
 Windows users will need to drop the sudo from this command
 
+## Easy testing over HTTP 
+
+Things sometimes work differently when browsed to via file: URLs.  Test over
+HTTP for more accurate results:
+
+    > volo serve
+    [1] 11563
+    > starting web server on port 8086
+    
+Now pointing your browser to http://localhost:8086/ will serve up your files
+for testing.
+    
 ## Simple Library Installation
 
 Right now there is a small (but growing) number of libraries useful to games that install out-of-the-box using volo. You can see a list of them [here](https://github.com/mozilla/WebGameStub/wiki/game-library-volo-compatibility), along with some information about what to do if you encounter problems.
