@@ -1,0 +1,18 @@
+{
+  "name": "Simple Canvas Game",
+  "description": "A simple HTML5 2D canvas game.",
+  "version": "0.1",
+  "manifest_version": 2,
+  "app": {
+    "urls": [
+      "*://localhost/examples/simple_canvas_game/"
+    ],
+    "launch": {
+      "container": "panel",
+      "web_url": "http://localhost:8086/examples/simple_canvas_game/"
+    }
+  },
+  "icons": {
+    "128": "/icon_128.png"
+  }
+}

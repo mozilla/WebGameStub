@@ -8,13 +8,15 @@ It's about not having to write the most basic game infrastructure pieces, like c
 It's about having an easier starting point than a blank canvas.
 It's about not having to spend your time stitching together the usual cross-browser bits associated with bootstrapping an app on the web.
 
-### What WebGameStub 0.1 Gets You
+### What WebGameStub Gets You
 
 * A simple update/render loop and canvas.
 * A version of Lost Decade's simple canvas game that you can inspect and extend.
 * Links to helpful game docs, API docs, and open art resources so you don't have to hunt for them.
 * HTML & CSS based on HTML5 Boilerplate for speed, robustness, and futureproofing.
-* (Optional) Using node.js: automated optimization, deployment to github pages, and library installation using volo.
+* (Optional) Requires node.js: webserver for HTTP testing, play your game as a
+    native app, automated optimization, deployment to github pages, and library
+    installation using volo.
 
 ## Getting Started
 
@@ -36,6 +38,25 @@ It's about not having to spend your time stitching together the usual cross-brow
     > sudo npm install -g volo
 
 Windows users will need to drop the sudo from this command
+
+## Easy Testing Over HTTP 
+
+Things sometimes work differently when browsed to via file: URLs.  Test over
+HTTP for more accurate results:
+
+    > volo serve
+    [1] 11563
+    > starting web server on port 8086
+    
+Now pointing your browser to http://localhost:8086/ will serve up your files
+for testing.
+
+## Play as an App Instead of in a Browser
+
+* Be sure you're accessing the game through a webserver (like "volo serve" above). Navigate to (e.g.) http://localhost:8086/examples/simple_canvas_game/install.html using a build of Firefox 16 or later.
+* When prompted, click the "Install"button.
+* Look in your OS application list (on Mac OS X, for example, this is the global Applications folder)
+* Click on the app named Simple Canvas Game to see this in action.
 
 ## Simple Library Installation
 

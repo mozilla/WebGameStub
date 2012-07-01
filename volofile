@@ -1,20 +1,14 @@
 /*jslint regexp: true */
 /*global define, console, process */
 
-define(function (require) {
-    'use strict';
-
-    var amdify = require('amdify'),
-        q = require('q'),
+    var connect = require('connect'),
         crypto = require('crypto'),
         fs = require('fs'),
         path = require('path'),
-        github = require('volo/github'),
-        githubAuth = require('volo/github/auth'),
         buildDir = 'www-built',
         pagesDir = 'www-ghpages';
 
-    return {
+    module.exports = {
         // Installs twitter bootstrap
         install_twbootstrap: {
             run: function (d, v, namedArgs, nowrap) {
@@ -515,6 +509,22 @@ define(function (require) {
                           '.appcache files to be: text/cache-manifest');
             })
             .fail(d.reject);
+        },
+        
+        serve: function( d, v, namedArgs ) {
+            var port = 8086;
+            var base = process.cwd();
+
+            var middleware = [
+                connect.static( base ),
+                connect.directory( base )
+            ];
+            connect.logger.format( "WebGameStub", ("[D] server :method :url :status " +
+                ":res[content-length] - :response-time ms" ));
+            middleware.unshift( connect.logger( "WebGameStub" ) );
+
+            console.log( "starting web server on port " + port );
+            connect.apply( null, middleware ).listen( port );
         }
     };
-});
+
