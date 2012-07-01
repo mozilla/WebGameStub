@@ -55,7 +55,7 @@ require(['jquery'], function($) {
   var then = Date.now();
   // Execute as fast as possible
   setInterval(main, 1);
-]
+
 });
 
 // END REQUIRE.JS CODE
