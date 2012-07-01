@@ -21,9 +21,9 @@ It's about not having to spend your time stitching together the usual cross-brow
 ## Getting Started
 
 1. [Download](https://github.com/mozilla/WebGameStub/downloads) the current version of WebGameStub
-2. Review index.html and game.js in examples/simple_canvas_game. These are the main parts of the simple canvas game built on top of WebGameStub
+2. Review index.html and app.js in examples/simple_canvas_game. These are the main parts of the simple canvas game built on top of WebGameStub
     * Depending on your level of experience you may find Lost Decade's [excellent tutorial](http://www.lostdecadegames.com/how-to-make-a-simple-html5-canvas-game/) helpful when going through the code
-3. Use index.html and game.js in the www and www/js folders as a starting point for your own game
+3. Use index.html and app.js in the www and www/js folders as a starting point for your own game
     * Many of the additional files in WebGameStub come from HTML5 Boilerplate, which has [Docs](http://html5boilerplate.com/docs/#the-core-of-html5-boilerplate) you can read to learn more
 
 # Helpful Tools (requires node.js)
