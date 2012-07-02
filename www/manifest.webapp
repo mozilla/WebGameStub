@@ -2,8 +2,9 @@
   "version": "0.1",  
   "name": "Your Game",  
   "description": "Description of your game",
+  "launch_url": "/WebGameStub/", 
   "icons": {  
-    "128": "/icon_128.png"  
+    "128": "/WebGameStub/icon_128.png"  
   },  
   "developer": {  
     "name": "Your Name",  

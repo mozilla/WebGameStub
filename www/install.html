@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<meta charset="UTF-8">
+
+<head>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <title>app install</title>
+</head>
+
+<body>
+  <script>
+    function onsuccess() {
+      console.log( "app installed" );
+    }
+    
+    function onerror(event) {
+      /*global console: false */      
+      console.log("app install failed: " + this.error.name);
+    }
+
+    // Get the current path, without the file name
+    var path = document.URL.split( '/' ).slice( 0, -1 ).join( '/' );
+
+    var request = navigator.mozApps.install(path + "/manifest.webapp");
+    request.onsuccess = onsuccess;
+    request.onerror = onerror;
+  </script>
+</body>
+
+</html>
