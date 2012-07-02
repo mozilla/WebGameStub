@@ -1,7 +1,7 @@
 {  
   "version": "0.1",  
   "name": "Your Game",  
-  "description": "Description of your game",  
+  "description": "Description of your game",
   "icons": {  
     "128": "/icon_128.png"  
   },  
