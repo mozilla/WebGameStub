@@ -67,9 +67,9 @@ Right now there is a small (but growing) number of libraries useful to games tha
 
 ## Optimize for high performance
 
-Build a minified version complete with an appcache file:
+Build a minified version:
 
-    > volo appcache
+    > volo build
     (...)
 
 ## Deploy to github pages
