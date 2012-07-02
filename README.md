@@ -51,13 +51,6 @@ HTTP for more accurate results:
 Now pointing your browser to http://localhost:8086/ will serve up your files
 for testing.
 
-## Play as an App Instead of in a Browser
-
-* Be sure you're accessing the game through a webserver (like "volo serve" above). Navigate to (e.g.) http://localhost:8086/examples/simple_canvas_game/install.html using a build of Firefox 16 or later.
-* When prompted, click the "Install"button.
-* Look in your OS application list (on Mac OS X, for example, this is the global Applications folder)
-* Click on the app named Simple Canvas Game to see this in action.
-
 ## Simple Library Installation
 
 Right now there is a small (but growing) number of libraries useful to games that install out-of-the-box using volo. You can see a list of them [here](https://github.com/mozilla/WebGameStub/wiki/game-library-volo-compatibility), along with some information about what to do if you encounter problems.
@@ -92,6 +85,16 @@ Deploy the built version to the gh-pages branch of suitably named repo:
     To git@github.com:dmose/monkeyGame.git
     e5dbfd4..1296c81  gh-pages -> gh-pages
     GitHub Pages is set up. Check http://dmose.github.com/monkeyGame/ in about 10-15 minutes.
+
+## Make Your Game Playable as an App
+
+* Build and deploy to github pages, as above
+* Using Firefox 16 (currently available as the Nightly channel), browse to 
+    the install page (for example,
+    <http://dmose.github.com/WebGameStub/install.html>)
+* When prompted, click the "Install" button.
+* Look in your OS application list (on Mac OS X, for example, this is the global Applications folder)
+* Click on the app (from the above example, named Simple Canvas Game) to launch
 
 # More Resources
 
