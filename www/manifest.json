@@ -8,6 +8,7 @@
       "*://example.com/yourgame"
     ],
     "launch": {
+      "container": "panel",
       "web_url": "http://example.com/yourgame"
     }
   },
