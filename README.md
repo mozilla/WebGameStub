@@ -25,6 +25,12 @@ It's about not having to spend your time stitching together the usual cross-brow
     * Depending on your level of experience you may find Lost Decade's [excellent tutorial](http://www.lostdecadegames.com/how-to-make-a-simple-html5-canvas-game/) helpful when going through the code
 3. Use index.html and app.js in the www and www/js folders as a starting point for your own game
     * Many of the additional files in WebGameStub come from HTML5 Boilerplate, which has [Docs](http://html5boilerplate.com/docs/#the-core-of-html5-boilerplate) you can read to learn more
+4. Once you've made some changes you can add all of your files to a new git repository.
+Navigate to your project folder in a terminal and do the following commands:
+
+        > git init
+        > git add -A
+        > git commit -m "Initial commit"
 
 # Helpful Tools (requires node.js)
 
