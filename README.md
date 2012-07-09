@@ -30,7 +30,7 @@ It's about not having to spend your time stitching together the usual cross-brow
 
 ## Tool Prerequisites
 
-* Be sure that [node.js and npm](http://nodejs.org/) are installed and in your PATH
+* Be sure that [node.js and npm](http://nodejs.org/) (>= 0.6) are installed and in your PATH
 * (optional) If you wish to deploy to github pages, ensure that
  [git](http://help.github.com/set-up-git-redirect) is installed and configured
 * Use npm to install volo into your path, if it's not there already:
