@@ -8,6 +8,8 @@ It's about not having to write the most basic game infrastructure pieces, like c
 It's about having an easier starting point than a blank canvas.
 It's about not having to spend your time stitching together the usual cross-browser bits associated with bootstrapping an app on the web.
 
+WebGameStub is not a framework but rather a collection of files that help you get your project started quickly with some best practices. Use as much or as little of it as you desire.
+
 ### What WebGameStub Gets You
 
 * A simple update/render loop and canvas.
