@@ -132,4 +132,4 @@ filing a [github issue](https://github.com/mozilla/WebGameStub/issues)
 # Feedback and helping out
 
 If you run into something that's missing or that is getting in your way when using WebGameStub, please help us out by opening a [github issue](https://github.com/mozilla/WebGameStub/issues) (or even a pull request!) to discuss it.
-We're often available in [#games on irc.mozilla.org](irc://irc.mozilla.org/#games) for questions.
+We're often available in #games on irc.mozilla.org ( irc://irc.mozilla.org/#games ) for questions.
