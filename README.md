@@ -1,3 +1,7 @@
+## This repository is obsolete
+
+WebGameStub has been moved to a [mortar](https://github.com/mozilla/mortar) project. Please use [mozilla/mortar-game-stub](https://github.com/mozilla/mortar-game-stub).
+
 # WebGameStub
 
 WebGameStub helps you get a quick and easy start on writing an HTML5 game with 2D canvas with a simple template and a few tools.
@@ -50,7 +54,7 @@ Navigate to your project folder in a terminal and do the following commands:
 
 Windows users will need to drop the sudo from this command
 
-## Easy Testing Over HTTP 
+## Easy Testing Over HTTP
 
 Things sometimes work differently when browsed to via file: URLs.  Test over
 HTTP for more accurate results:
@@ -58,7 +62,7 @@ HTTP for more accurate results:
     > volo serve
     [1] 11563
     > starting web server on port 8086
-    
+
 Now pointing your browser to http://localhost:8086/ will serve up your files
 for testing.
 
@@ -100,7 +104,7 @@ Deploy the built version to the gh-pages branch of suitably named repo:
 ## Make Your Game Playable as an App
 
 * Build and deploy to github pages, as above
-* Using Firefox 16 (currently available as the Nightly channel), browse to 
+* Using Firefox 16 (currently available as the Nightly channel), browse to
     the install page (for example,
     <http://dmose.github.com/WebGameStub/install.html>)
 * When prompted, click the "Install" button.
